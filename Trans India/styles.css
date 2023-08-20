@@ -1,0 +1,401 @@
+/* Basic CSS to style the header and navigation bar */
+header {
+  background-color: #1c2833;
+  color: #fff;
+  padding: 20px 10px; /* Increase vertical padding */
+  display: flex; /* Use flexbox for flexible layout */
+  justify-content: space-between; /* Align content at the ends of the header */
+  align-items: center; /* Center vertically */
+}
+
+
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Use flexbox to arrange li elements in a row */
+  align-items: center; /* Align li elements vertically at the center */
+}
+
+nav ul li {
+ /* display: inline; */
+  margin-right: 20px; /* Add some gap between the li elements */
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* Remove the margin from the last li element to avoid extra spacing */
+}
+
+nav ul li a {
+  color: #fbfcfc;
+  text-decoration: none;
+  padding: 15px 20px; /* Increase vertical padding */
+  font-size: 28px; /* Increase font size */
+  line-height: 1.6; /* Increase line height to vertically center the text */
+  
+  width: 90px; /* Adjust the width as per your preference */
+  box-sizing: border-box; /* Include padding and border in the specified width */
+  text-align: center; /* Center the text horizontally within the links */
+  margin-right: 40px; /* Add more gap between the titles */
+  
+}
+
+
+
+nav ul li a:hover {
+  background-color: #3498db;
+}
+
+header img {
+  max-width: 500px; /* Set a maximum width for the logo */
+  /* display: block; /* Make the image a block element to center it horizontally */
+  margin: 10px auto; /* Center the logo horizontally with some top and bottom margin */
+   max-height: 50px; /* Set a maximum height for the logo */
+}
+
+.image-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.intro-container {
+  display: flex;
+ /* flex-direction: column; */
+ flex-direction: row;
+  align-items: center;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+   background-color:  #17202a;
+}
+
+.introductory-paragraph {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Helvetica Neue"Arial, sans-serif;
+  flex: 1; /* Expand to fill available space */
+}
+
+.introductory-paragraph h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #3498db;
+  font-style: italic;
+}
+
+.introductory-paragraph p {
+  font-size: 16px;
+  line-height: 1.6;
+  color:  #fdfefe;
+  font-style: italic;
+}
+/* CSS to style the introductory image */
+.intro-image {
+  max-width: 500px;
+ /*  margin-top: 20px; */
+}
+
+.intro-image {
+  flex: 1; /* Expand to fill available space */
+}
+
+.intro-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.intro-image figcaption {
+  text-align: center;
+  font-style: italic;
+  margin-top: 10px;
+  color:   #17202a;
+  background-color: #f9f9f9; /* Set the background color of the caption */
+  padding: 5px; /* Add some padding to the caption for a better look */
+  border: 1px solid #ccc; /* Add a border around the caption for emphasis */
+  border-radius: 4px; /* Add rounded corners to the caption */
+}
+
+.testimonial-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.testimonial-slider {
+  margin-top: 20px;
+}
+
+.testimonial-slide {
+  background-color: #17202a;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   /* Set the height of each slide */
+  height: 400px; /* Adjust the height as per your preference */
+}
+
+.testimonial-slide h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #3498db;
+}
+
+.testimonial-slide p {
+  font-size: 16px;
+  line-height: 1.6;
+  color:  #fdfefe;
+}
+
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+
+.about-hero {
+  text-align: center;
+}
+
+.about-hero h1 {
+  font-size: 36px;
+  color: #3498db;
+  font-weight: bold;
+}
+
+.about-hero p {
+  font-size: 18px;
+  color: #555;
+  font-weight: bold;
+}
+
+
+/* Styles for the slideshow container */
+.slideshow-container {
+  margin-top: 20px;
+}
+
+.slideshow-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.about-description {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #fdfefe;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   background-color:  #17202a;
+  
+}
+
+.about-description h2 {
+  font-size: 24px;
+  color: #3498db;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.about-description p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #fdfefe;
+  font-style: italic; /* Make the text in italics */
+}
+
+
+/* Styles for the portfolio section */
+.portfolio-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.portfolio-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.portfolio-item {
+  flex-basis: calc(33.33% - 20px); /* Each item takes one-third width with some margin in between */
+  margin-bottom: 20px;
+  width: 33.33%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.image-container {
+  width: 100%;
+  padding-bottom: 75%; /* Maintain a 4:3 aspect ratio (for example) */
+  position: relative;
+}
+
+.image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image fills the container without distortion */
+}
+
+.portfolio-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*
+.portfolio-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+*/
+
+.portfolio-item h3 {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #3498db;
+}
+
+
+
+ footer {
+      background-color: #1c2833;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      bottom: 1px; 
+      left: 0;
+      width: 100%;
+    }
+
+    footer p {
+      margin: 5px;
+    }
+
+/* Styles for the paragraph sections */
+
+
+p {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #fdfefe;
+  /* background-color: #17202a; */
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #3498db;
+}
+
+/* Styles for the project details pages */
+
+.project-details-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.project-details-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-details-content h1 {
+  font-size: 36px;
+}
+
+.project-details-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.project-description {
+  max-width: 100%
+  text-align: justify;
+    background-color: #17202a;
+}
+
+.project-description h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project-description p {
+  margin-bottom: 20px;
+}
+
+
+/*
+
+katakana
+
+
+.project-details-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.project-details-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-details-content h1 {
+  font-size: 36px;
+  color: #3498db;
+}
+
+.project-details-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.project-description {
+  max-width: 800px;
+  text-align: justify;
+}
+
+.project-description h2 {
+  font-size: 24px;
+  color: #3498db;
+  margin-bottom: 10px;
+}
+
+.project-description p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+*/
